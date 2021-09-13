@@ -1,0 +1,222 @@
+body
+{
+    background-image: url('background_image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right
+{
+    float: right;
+    margin-top: 0%;
+    margin-right: 5%;
+    width: 35%;
+    height: 50%;
+    /* overflow: hidden; */
+    /* background-color: black; */
+}
+.left
+{
+    /* float: left; */
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 40%;
+    height: 50%;
+    /* background-color: rgb(22, 14, 14); */
+}
+
+#heading
+{
+    color: rgb(220, 234, 227);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+   
+}
+
+#restart_btn
+{
+    color: rgb(193, 239, 193);
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: rgb(9, 5, 9);
+}
+
+#restart_btn:hover
+{
+    background-color:rgb(153, 221, 238);
+    color: rgb(0, 0, 0);
+    border-color:  rgb(9, 5, 9);
+    outline-color: white;
+    outline-width: 20px;
+}
+
+#table
+{ 
+    background-color: rgba(8, 58, 72, 0.434);
+     width: 40%;
+    height: 50%;
+    border-radius: 5px;
+    /* position: relative; */
+ }
+
+.btn
+{
+    background-color: rgba(2, 43, 69, 0.434);
+    padding: 25px; 
+    /* display: block; */
+    /* font-size: 25px; */
+    text-align: justify;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    /* padding-left: 40%; */
+    /* padding-right: 40%; */
+    /* padding: 35% 35% 35% 35%; */
+    margin: 5px;
+}
+
+.btn:hover
+{
+    background-color: rgb(253, 253, 253);
+    /* padding: 25px;  */
+    /* display: block; */
+    /* font-size: 25px; */
+    text-align: justify;
+    color: rgb(12, 43, 40);
+    /* padding: 37% 37% 37% 37%; */
+    cursor: pointer;
+}
+
+
+#game_table
+{
+    float: left;
+    /* background-color: aqua; */
+    margin-bottom: 30%;    
+}
+
+@media only screen and (max-width:600px) {
+    body
+    {
+        background-image: url('background_image.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-repeat: repeat-y;
+        overflow: auto;
+    }
+    .right
+    {
+        /* text-align: right; */
+        /* display: inline-flex; */
+        /* float: left; */
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 280px; 
+        height: 30%;
+        /* overflow: hidden; */
+        /* background-color: rgb(53, 21, 21); */
+    }
+    .left
+    {
+        text-align: center;
+        /* float: left; */
+        margin-top: 15%;
+        margin-left: 20%;
+        margin-right: 50%;
+        width: 60%;
+        height: 50%;
+        /* background-color: rgb(22, 14, 14); */
+    }
+
+    #heading
+    {
+        color: rgb(220, 234, 227);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    
+    }
+
+    #restart_btn
+    {
+        color: rgb(193, 239, 193);
+        text-align: justify;
+        /* padding-left: 10%; */
+        /* padding-right: 10%; */
+        /* padding-top: 1%; */
+        /* padding-bottom: 1%; */
+        border-radius: 4px;
+        font-size: 23px;
+        background-color: rgb(9, 5, 9);
+        margin-top: 10%;
+        margin-bottom: 40%;
+        /* margin-left: 5%; */
+        /* margin-right: 5%; */
+    }
+
+    #restart_btn:hover
+    {
+        background-color:rgb(153, 221, 238);
+        color: rgb(0, 0, 0);
+        border-color:  rgb(9, 5, 9);
+        outline-color: white;
+        outline-width: 20px;
+        cursor: pointer;
+    }
+
+    #game_table
+    {
+        /* background-color: blue; */
+        text-align: center;
+        position: relative;
+        margin: auto auto auto auto;
+    }
+    #table
+    { 
+        text-align: center;
+        /* background-color: rgba(223, 231, 234, 0.434); */
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        /* float: left; */
+        margin-left: 1px;
+        position: relative;
+    }
+
+    .btn
+    {
+        background-color: rgba(2, 43, 69, 0.434);
+        padding: 25px; 
+        padding: 25px; 
+        /* display: block; */
+        /* font-size: 25px; */
+        text-align:center;
+        color: white;
+        font-size: 35px;
+        border-radius: 5px;
+        /* padding-left: 40%; */
+        /* padding-right: 40%; */
+        /* padding: 35% 35% 35% 35%; */
+        /* margin: right 5px; */
+        /* float: left; */
+    }
+
+    .btn:hover
+    {
+        background-color: rgb(253, 253, 253);
+        /* padding: 25px;  */
+        /* display: block; */
+        /* font-size: 25px; */
+        text-align: justify;
+        color: rgb(12, 43, 40);
+        /* padding: 37% 37% 37% 37%; */
+        cursor: pointer;
+    }
+
+}
+
