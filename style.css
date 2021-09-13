@@ -171,10 +171,11 @@ body
 
     #game_table
     {
-        /* background-color: blue; */
+        background-color: blue;
         text-align: center;
         position: relative;
         margin: auto auto auto auto;
+        float: left;
     }
     #table
     { 
@@ -183,7 +184,7 @@ body
         width: 100%;
         height: 100%;
         border-radius: 5px;
-        /* float: left; */
+        float: left;
         margin-left: 5px;
         position: relative;
     }
