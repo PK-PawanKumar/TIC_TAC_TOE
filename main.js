@@ -1,6 +1,7 @@
 // player's move
 var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 plrmove = 'O';
+var clr="green"
 
 var counter=0;
 
@@ -46,6 +47,12 @@ function mkmove(i) {
     else {
         if (i.textContent != 'X' && i.textContent != 'O') {
             var chance;
+
+            if(clr=="green")
+            clr="red";
+            else
+            clr = "green";
+
             if (plrmove === 'X') {
                 plrmove = 'O';
             }
@@ -54,7 +61,7 @@ function mkmove(i) {
 
             var position = i.textContent;
             i.textContent = plrmove;
-            document.getElementById(position).style.color = "white";
+            document.getElementById(position).style.color = clr;
             chance = plrmove;
             document.getElementById(chance).style.backgroundColor = "rgb(228, 102, 102)";
 
