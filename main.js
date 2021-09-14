@@ -7,27 +7,51 @@ var counter=0;
 
 function checkWinner() {
     if (arr[0] == arr[1] && arr[1] == arr[2]) {
+        document.getElementById("0").style.backgroundColor="yellow";
+        document.getElementById("1").style.backgroundColor="yellow";
+        document.getElementById("2").style.backgroundColor="yellow";
         return true;
     }
     else if (arr[3] == arr[4] && arr[4] == arr[5]) {
+        document.getElementById("3").style.backgroundColor="yellow";
+        document.getElementById("4").style.backgroundColor="yellow";
+        document.getElementById("5").style.backgroundColor="yellow";
         return true;
     }
     else if (arr[6] == arr[7] && arr[7] == arr[8]) {
+        document.getElementById("6").style.backgroundColor="yellow";
+        document.getElementById("7").style.backgroundColor="yellow";
+        document.getElementById("8").style.backgroundColor="yellow";
         return true;
     }
     else if (arr[0] == arr[3] && arr[3] == arr[6]) {
+        document.getElementById("0").style.backgroundColor="yellow";
+        document.getElementById("3").style.backgroundColor="yellow";
+        document.getElementById("6").style.backgroundColor="yellow";
         return true;
     }
     else if (arr[1] == arr[4] && arr[4] == arr[7]) {
+        document.getElementById("1").style.backgroundColor="yellow";
+        document.getElementById("4").style.backgroundColor="yellow";
+        document.getElementById("7").style.backgroundColor="yellow";
         return true;
     }
     else if (arr[2] == arr[5] && arr[5] == arr[8]) {
+        document.getElementById("2").style.backgroundColor="yellow";
+        document.getElementById("5").style.backgroundColor="yellow";
+        document.getElementById("8").style.backgroundColor="yellow";
         return true;
     }
     else if (arr[0] == arr[4] && arr[4] == arr[8]) {
+        document.getElementById("0").style.backgroundColor="yellow";
+        document.getElementById("4").style.backgroundColor="yellow";
+        document.getElementById("8").style.backgroundColor="yellow";
         return true;
     }
     else if (arr[2] == arr[4] && arr[4] == arr[6]) {
+        document.getElementById("2").style.backgroundColor="yellow";
+        document.getElementById("4").style.backgroundColor="yellow";
+        document.getElementById("6").style.backgroundColor="yellow";
         return true;
     }
     else {
@@ -77,7 +101,7 @@ function mkmove(i) {
         winnerfound = checkWinner();
         if (winnerfound == true) {
             alert("congratulations!🥳  player  " + plrmove + " is winner");
-            counter--;
+            counter=0;
         }
         else if(counter==9)
         {
@@ -109,6 +133,16 @@ function Restart() {
         document.getElementById("6").style.color = "rgba(8, 58, 72, 0)";
         document.getElementById("7").style.color = "rgba(8, 58, 72, 0)";
         document.getElementById("8").style.color = "rgba(8, 58, 72, 0)";
+
+        document.getElementById("0").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
+        document.getElementById("1").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
+        document.getElementById("2").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
+        document.getElementById("3").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
+        document.getElementById("4").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
+        document.getElementById("5").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
+        document.getElementById("6").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
+        document.getElementById("7").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
+        document.getElementById("8").style.backgroundColor = "rgba(2, 43, 69, 0.434)";
 
         // counter = 0
         counter=0;

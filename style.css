@@ -16,7 +16,7 @@ body
 .left
 {
     /* float: left; */
-    margin-top: 15%;
+    margin-top: 0%;
     margin-left: 10%;
     width: 40%;
     height: 50%;
@@ -52,6 +52,21 @@ body
     outline-color: white;
     outline-width: 20px;
     cursor: pointer;
+}
+
+#sboardbg
+{
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgba(51, 255, 0, 0.356);
+    width: 40%;
+    height: 80%;
+}
+
+#scoreboard
+{
+    color: aqua;
+
 }
 
 .plrmove
@@ -129,7 +144,7 @@ body
     /* display: block; */
     /* font-size: 25px; */
     text-align: justify;
-    color: rgb(12, 43, 40);
+    color: rgb(12, 43, 40,0);
     /* padding: 37% 37% 37% 37%; */
     cursor: pointer;
     /* border: 1px solid blue; */
@@ -212,6 +227,7 @@ body
         outline-width: 20px;
         cursor: pointer;
     }
+    
 
     #game_table
     {
@@ -260,7 +276,7 @@ body
         /* display: block; */
         /* font-size: 25px; */
         text-align: justify;
-        color: rgb(12, 43, 40);
+        color: rgb(12, 43, 40,0);
         /* padding: 37% 37% 37% 37%; */
         cursor: pointer;
     }
